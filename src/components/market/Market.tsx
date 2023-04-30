@@ -29,7 +29,7 @@ export default function Market() {
   return (
     <>
       <section className="my-10">
-        <h2 className="text-4xl font-bold">Market Update</h2>
+        <h2 className="text-xl lg:text-4xl font-bold">Market Update</h2>
         {loading ? (
           <div className="flex justify-center p-8 my-16">
             <Loader />

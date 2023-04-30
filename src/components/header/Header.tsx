@@ -11,7 +11,7 @@ function Header({ loading, data }: { loading: boolean; data: Coin[] }) {
     <>
       <header className="bg-gradient-to-t from-bg-primary to-bg-secondary ">
         <Navbar />
-        <section className="h-[95vh] mx-auto max-w-7xl">
+        <section className="min-h-[95vh] mx-auto max-w-7xl">
           <div className="p-8 grid lg:grid-cols-12 items-center">
             <div className="col-span-1 relative hidden lg:block">
               <img className="w-16 h-16 object" src={bitcoin} alt="Bitcoin" />
@@ -31,14 +31,14 @@ function Header({ loading, data }: { loading: boolean; data: Coin[] }) {
                     </div>
                   </>
                 ) : (
-                  <div className="grid grid-cols-12 gap-10">
+                  <div className="grid lg:grid-cols-12 gap-10">
                     {data.map((item) => (
-                      <div key={item.id} className="col-span-6 lg:col-span-3">
+                      <div key={item.id} className="lg:col-span-3">
                         <div className="flex flex-col justify-center items-center p-4">
                           <img
                             src={item.image}
                             alt={item.id}
-                            className="w-24 h-24"
+                            className="h-14 w-14  lg:w-24 lg:h-24"
                           />
                           <h2 className="text-2xl font-mono mt-4 flex gap-2">
                             {item.name}
