@@ -41,7 +41,7 @@ export default function Table({ data }: { data: Coin[] }) {
                       : 'text-green-500'
                   }`}
                 >
-                  $ {item.price_change_24h}
+                  $ {item.price_change_24h.toFixed(2)}
                 </td>
                 <td className="py-6 px-8">$ {numberWithCommas(item.market_cap)}</td>
               </tr>

@@ -44,7 +44,7 @@ export default function Market() {
             {[0, 1, 2, 3, 4].map((i) => (
               <span
                 className={`bg-white p-3 text-black rounded text-lg cursor-pointer hover:text-white hover:bg-text-primary ${
-                  currentPage === i && 'bg-text-primary text-white'
+                  currentPage === i && 'bg-gray-600 text-white'
                 }`}
                 onClick={() => {
                   setCurrentPage(i);
